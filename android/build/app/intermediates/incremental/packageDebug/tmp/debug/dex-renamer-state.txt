@@ -1,0 +1,4 @@
+#Sat Jun 01 19:01:53 COT 2019
+base.0=D\:\\Development\\Applications developed\\Flutter Projects\\mixercon_assistance\\android\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

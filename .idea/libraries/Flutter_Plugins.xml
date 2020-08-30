@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Flutter Plugins" type="FlutterPluginsLibraryType">
+    <CLASSES>
+      <root url="file://D:/Development Tools/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/google_maps_flutter-0.5.15" />
+      <root url="file://D:/Development Tools/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/location-2.3.5" />
+      <root url="file://D:/Development Tools/Flutter/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_stetho-0.2.2" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
