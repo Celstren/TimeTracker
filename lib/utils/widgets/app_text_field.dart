@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
 
-class AppSimpleTextField extends StatelessWidget {
+class AppTextField extends StatelessWidget {
   final String title;
   final TextStyle titleStyle;
   final Size size;
@@ -18,7 +18,7 @@ class AppSimpleTextField extends StatelessWidget {
   final String errorMsg;
   final Widget suffixIcon;
 
-  const AppSimpleTextField({
+  const AppTextField({
     Key key,
     this.title = "",
     this.size,

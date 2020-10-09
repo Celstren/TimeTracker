@@ -328,7 +328,7 @@ class CustomAlertDialog extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
-          if (title != null)
+          title != null ?
             Padding(
               padding: titlePadding ??
                   EdgeInsets.fromLTRB(
@@ -343,8 +343,8 @@ class CustomAlertDialog extends StatelessWidget {
                   container: true,
                 ),
               ),
-            ),
-          if (content != null)
+            ) : SizedBox(),
+          content != null ?
             Flexible(
               child: Padding(
                 padding: contentPadding,
@@ -355,11 +355,11 @@ class CustomAlertDialog extends StatelessWidget {
                   child: content,
                 ),
               ),
-            ),
-          if (actions != null)
+            ) : SizedBox(),
+          actions != null?
             ButtonBar(
               children: actions,
-            ),
+            ) : SizedBox(),
         ],
       ),
     );
@@ -619,21 +619,21 @@ class CustomSimpleDialog extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            if (title != null)
+            title != null ?
               Padding(
                 padding: titlePadding,
                 child: DefaultTextStyle(
                   style: theme.textTheme.headline6,
                   child: Semantics(namesRoute: true, child: title),
                 ),
-              ),
-            if (children != null)
+              ) : SizedBox(),
+            children != null ?
               Flexible(
                 child: SingleChildScrollView(
                   padding: contentPadding,
                   child: ListBody(children: children),
                 ),
-              ),
+              ) : SizedBox(),
           ],
         ),
       ),
